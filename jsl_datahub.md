@@ -4,7 +4,7 @@
 ## NoSQL Spatial Storage Stack
 <br/>
 ### _9as Jornadas SIG Libre_
-#### On-line: <a href="http://sergioedo.github.io/workshops/" target="_blank">http://sergioedo.github.io/workshops/</a>
+#### On-line: <a href="http://sergioedo.github.io/workshops/" target="_blank">http://sergioedo.github.io/jsl/jsl_datahub.html</a>
 <br/>
 <br/>
 <img style="border: 0; box-shadow: none; margin: 0;" src="img/jsl/tmb.png"/>
