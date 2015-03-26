@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+
+		<title>Evolución GIS TMB</title>
+
+		<meta name="description" content="Evolución GIS en TMB">
+		<meta name="author" content="Sergi Edo, Eduard Porquet">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="./reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="./reveal.js/css/theme/beige.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="./reveal.js/lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'reveal.js/css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="reveal">
+
+			<div class="slides">
+				
+				 <section data-markdown="jsl_tmb.md" data-separator="^\n---\n$" data-vertical="^\n-v-\n$"></section>
+								
+			</div>
+		</div>
+
+		<script src="./reveal.js/lib/js/head.min.js"></script>
+		<script src="./reveal.js/js/reveal.min.js"></script>
+
+		<script>
+			// Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				keyboard: true,
+				touch: true,
+				overview: true,
+				center: true,
+				loop: false,
+				autoSlide: 0,
+				mouseWheel: true,
+
+				theme: Reveal.getQueryHash().theme || 'beige',				// sky/beige/simple/serif/night/moon/solarized/default
+				transition: Reveal.getQueryHash().transition || 'concave',		// default/cube/page/concave/zoom/linear/fade/none
+				width: Reveal.getQueryHash().width || 1280,
+				height: Reveal.getQueryHash().height || 1024,
+				
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+					{ src: './reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					// Interpret Markdown in <section> elements
+					{ src: './reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: './reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					// Syntax highlight for <code> elements
+					{ src: './reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					// Zoom in and out with Alt+click
+					{ src: './reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					// Speaker notes
+					{ src: './reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+			//document.getElementById("belt").volume=.1;
+
+		</script>
+	</body>
+</html>
